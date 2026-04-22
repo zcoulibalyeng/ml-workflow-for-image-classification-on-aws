@@ -15,7 +15,7 @@ This project implements:
 
 ## Architecture
 
-<img src="arch.svg: width="900px" />
+<img src="archi.png" width="900px" />
 
 ## Project Structure
 
