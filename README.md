@@ -15,24 +15,7 @@ This project implements:
 
 ## Architecture
 
-```
-┌─────────────┐     ┌─────────────────┐     ┌──────────────────┐
-│   S3 Bucket │────▶│  Lambda 1:      │────▶│  Lambda 2:       │
-│  (Images)   │     │  Serialize Data │     │  Classification  │
-└─────────────┘     └─────────────────┘     └──────────────────┘
-                                                     │
-                                                     ▼
-                    ┌─────────────────┐     ┌──────────────────┐
-                    │  Step Functions │◀────│  Lambda 3:       │
-                    │  Orchestration  │     │  Filter Results  │
-                    └─────────────────┘     └──────────────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │  Model Monitor  │
-                    │  (Data Capture) │
-                    └─────────────────┘
-```
+<img src="archh.svg: width="900px" />
 
 ## Project Structure
 
